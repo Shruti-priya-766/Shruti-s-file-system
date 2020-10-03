@@ -14,7 +14,7 @@ public class searchFile {
 		System.out.println();
 		exitinput3 = sc.next();
 		String workingDir = System.getProperty("user.dir");
-		File sfile = new File(workingDir+"\\src\\root\\");
+		File sfile = new File(workingDir+"\\root\\");
 		
 		fileExistsCheck fec = new fileExistsCheck();
 		if(fec.existsFile(sfile,exitinput3)) {

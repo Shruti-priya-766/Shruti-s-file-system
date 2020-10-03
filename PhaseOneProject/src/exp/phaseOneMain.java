@@ -28,7 +28,7 @@ public class phaseOneMain {
 		
 		String workingDir = System.getProperty("user.dir");
 		
-		File fileDir = new File(workingDir+"\\src\\root");
+		File fileDir = new File(workingDir+"\\root");
 		
 		Scanner sc = new Scanner(System.in);
 		

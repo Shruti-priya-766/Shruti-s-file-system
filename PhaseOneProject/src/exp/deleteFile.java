@@ -17,8 +17,8 @@ public class deleteFile {
 		
 		//String workingDir = System.getProperty("user.dir");
 		String workingDir = System.getProperty("user.dir");
-		File dfile = new File(workingDir+"\\src\\root\\"+exitinput2); 
-		File sfile = new File(workingDir+"\\src\\root\\");
+		File dfile = new File(workingDir+"\\root\\"+exitinput2); 
+		File sfile = new File(workingDir+"\\root\\");
 		
 		//System.out.println(fecd.existsFile(sfile,exitinput2));
 		if(!fecd.existsFile(sfile,exitinput2)) {

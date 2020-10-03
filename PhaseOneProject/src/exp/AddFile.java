@@ -12,7 +12,7 @@ public class AddFile {
 		
 		boolean addFileFlag = true;
 		String workingDir = System.getProperty("user.dir");
-	
+		//System.out.prinln(workingDir);
 		Scanner sc = new Scanner(System.in);
 	
 		System.out.println();
@@ -21,7 +21,7 @@ public class AddFile {
 		System.out.println("Enter the file name to 'ADD'.");
 		System.out.println();
 		exitinput1 = sc.next();
-		File testfile = new File(workingDir+"\\src\\root\\", exitinput1);
+		File testfile = new File(workingDir+"\\root\\", exitinput1);
 	
 		if(testfile.exists()) {
 			addFileFlag = false;
@@ -29,7 +29,7 @@ public class AddFile {
 		}
 		if(exitinput1.endsWith(".txt") && addFileFlag == true) {
 			System.out.println("valid");
-			try(FileWriter fw=new FileWriter(workingDir+"\\src\\root\\"+exitinput1);
+			try(FileWriter fw=new FileWriter(workingDir+"\\root\\"+exitinput1);
 				BufferedWriter bw=new BufferedWriter(fw);
 			){
 				System.out.println("Enter some containt inside the file");
